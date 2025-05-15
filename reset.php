@@ -27,7 +27,7 @@ if (empty($result)) {
     $email=($result[0]["email"]);
     $pass=($result[0]["pass"]);
 
-    $link="<a href='http://192.168.1.19/banhang/reset_pass.php?key=".$email."&reset=".$pass."'>Click To Reset password</a>";
+    $link="<a href='http://192.168.1.10/banhang/reset_pass.php?key=".$email."&reset=".$pass."'>Click To Reset password</a>";
     // require_once('phpmail/PHPMailerAutoload.php');
     $mail = new PHPMailer();
     $mail->CharSet =  "utf-8";

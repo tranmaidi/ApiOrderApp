@@ -1,8 +1,8 @@
 <?php
 include "connect.php";
 $page = $_POST['page'];
-$total = 5; // can lay 5 san pham tren 1 trang
-$pos = ($page-1)*$total;  // 0,5  5,5
+$total = 5;
+$pos = ($page-1)*$total;
 $loai = $_POST['loai'];
 
 $query = 'SELECT * FROM `sanphammoi` WHERE `loai` = '.$loai.' LIMIT '.$pos.','.$total.'';
